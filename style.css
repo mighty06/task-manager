@@ -12,7 +12,7 @@ body {
     background: white;
     padding: 25px;
     border-radius: 20px;
-    width: 350px;
+    width: 400px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
@@ -23,9 +23,10 @@ h1 {
 .input-section {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
-input {
+input, select {
     flex: 1;
     padding: 10px;
     border-radius: 10px;
@@ -43,6 +44,22 @@ button {
 
 button:hover {
     background: #5a67d8;
+}
+
+.filters {
+    display: flex;
+    margin-top: 15px;
+}
+
+.filters button {
+    flex: 1;
+    margin: 2px;
+    background: #ddd;
+    color: black;
+}
+
+.filters button:hover {
+    background: #bbb;
 }
 
 ul {
@@ -66,6 +83,38 @@ li.completed {
     opacity: 0.6;
 }
 
+.task-info {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.date {
+    font-size: 12px;
+    color: gray;
+}
+
+.priority {
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: white;
+    margin-top: 5px;
+    width: fit-content;
+}
+
+.high {
+    background: red;
+}
+
+.medium {
+    background: orange;
+}
+
+.low {
+    background: green;
+}
+
 .delete-btn {
     background: red;
     color: white;
@@ -73,4 +122,14 @@ li.completed {
     padding: 5px 8px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.edit-btn {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
 }
