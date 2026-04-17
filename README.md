@@ -18,3 +18,5 @@ This is a simple and interactive Task Manager built using HTML, CSS, and JavaScr
 ## How to Run
 1. Download files
 2. Open index.html in browser
+## Screenshot
+![App Screenshot](app_preview.png)
